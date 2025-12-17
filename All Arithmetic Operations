@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        int addition = a + b;
+        int subtraction = a - b;
+        int multiplication = a * b;
+
+        System.out.println("Addition = " + addition);
+        System.out.println("Subtraction = " + subtraction);
+        System.out.println("Multiplication = " + multiplication);
+
+        // Division with zero check
+        if (b != 0) {
+            double division = (double) a / b;
+            System.out.println("Division = " + division);
+        } else {
+            System.out.println("Division not possible (cannot divide by zero)");
+        }
+    }
+}
